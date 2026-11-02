@@ -167,7 +167,7 @@
       <!-- SUBSCRIPTION -->
       <div class="sub-card">
         <div class="sub-card-head">🎟 Абонемент</div>
-        <div class="sub-row">Оплаченных уроков: <span>3</span></div>
+        <div class="sub-row">Оплаченных уроков: <span>2</span></div>
       </div>
 
       <!-- SCHEDULE -->
@@ -198,9 +198,57 @@
         <div class="card-head">📖 Уроки и материалы</div>
         <div class="lesson-tabs">
           <div class="lesson-tab" onclick="switchLessons('september', this)">Сентябрь</div>
-          <div class="lesson-tab active" onclick="switchLessons('october', this)">Октябрь</div>
+          <div class="lesson-tab" onclick="switchLessons('october', this)">Октябрь</div>
+          <div class="lesson-tab active" onclick="switchLessons('november', this)">Ноябрь</div>
         </div>
-        <div class="lesson-month active" id="lessons-october">
+        <div class="lesson-month active" id="lessons-november">
+          <div class="lesson-item">
+            <div class="lesson-item-head" onclick="toggleLesson(this)">
+              <div class="lesson-title">Tenses round two: Past Perfect, used to, Future</div>
+              <div class="lesson-date-badge">1 ноября</div>
+              <div class="chevron">&#9660;</div>
+            </div>
+            <div class="lesson-body">
+              <div class="lesson-section">
+                <div class="lesson-section-label">Что делали на уроке</div>
+                <ul class="topic-list">
+                  <li>Warm-up: Halloween party — костюмы, во сколько вернулась домой</li>
+                  <li>A letter from Kate: раскрыли скобки на правила из домашки (Present Simple / Continuous, Present Perfect / Past Simple, Present Perfect Continuous, if / when / as soon as)</li>
+                  <li>Past Perfect: действие раньше другого действия в прошлом; quick check, перевод на время, разговорные вопросы</li>
+                  <li>used to / would / be used to / get used to: правило, упражнения, перевод</li>
+                  <li>Разговор о школе; усиление с do: I did tell you</li>
+                  <li>Future: will, going to, Present Continuous, will be + -ing — quick check и перевод на время</li>
+                  <li>Новые слова: recognise, dye your hair, stay up late, adore, drop, ladder, look down on, named after, prejudice</li>
+                </ul>
+              </div>
+              <div class="hw-block">
+                <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать задание на доске</div>
+                    <a class="hw-link" href="https://app.holst.so/share/b/86cef56a-cdc6-4b88-810d-192b52f78461" target="_blank">&#128203; Открыть доску</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать интерактивные задания</div>
+                    <a class="hw-link" href="https://alinaparam.github.io/alinahmw/" target="_blank">&#128214; Homework · Past, Habits &amp; Plans</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Выучить новые слова</div>
+                    <a class="hw-link" href="https://termin.world/share/9652b011" target="_blank">&#128218; Открыть карточки</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lesson-month" id="lessons-october">
           <div class="lesson-item">
             <div class="lesson-item-head" onclick="toggleLesson(this)">
               <div class="lesson-title">Future Continuous: will be + -ing</div>
@@ -223,7 +271,7 @@
               <div class="hw-block">
                 <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать задания по ссылке</div>
                     <a class="hw-link" href="https://alinaparam.github.io/alinahmw/6.html" target="_blank">&#128214; Открыть задания</a>
@@ -255,14 +303,14 @@
               <div class="hw-block">
                 <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать задания по ссылке</div>
                     <a class="hw-link" href="https://alinaparam.github.io/alinahmw/7.html" target="_blank">&#128214; Открыть задания</a>
                   </div>
                 </div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Повторить слова</div>
                     <a class="hw-link" href="https://termin.world/share/7915e9f4" target="_blank">&#128218; Открыть карточки</a>
@@ -317,21 +365,21 @@
               <div class="hw-block">
                 <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать задания по ссылке</div>
                     <a class="hw-link" href="https://alinaparam.github.io/alinahmw/8.html" target="_blank">&#128214; Открыть задания</a>
                   </div>
                 </div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать задания на доске</div>
                     <a class="hw-link" href="https://app.holst.so/share/b/86cef56a-cdc6-4b88-810d-192b52f78461" target="_blank">&#128279; Открыть доску</a>
                   </div>
                 </div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Повторить слова</div>
                     <a class="hw-link" href="https://termin.world/share/7915e9f4" target="_blank">&#128218; Открыть карточки</a>
@@ -363,7 +411,7 @@
               <div class="hw-block">
                 <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать прошлую домашку</div>
                   </div>
@@ -416,7 +464,7 @@
               <div class="hw-block">
                 <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать задания по ссылке</div>
                     <a class="hw-link" href="https://alinaparam.github.io/alinahmw/9.html" target="_blank">&#128214; Homework · Tenses &amp; If</a>
@@ -447,7 +495,7 @@
               <div class="hw-block">
                 <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
                 <div class="hw-item">
-                  <div class="hw-status todo">!</div>
+                  <div class="hw-status done">&#10003;</div>
                   <div>
                     <div class="hw-task">Сделать задания по ссылке</div>
                     <a class="hw-link" href="https://alinaparam.github.io/alinahmw/10.html" target="_blank">&#128214; Homework · Perfect, Present &amp; If</a>
@@ -789,7 +837,8 @@
         <div class="card-head">📊 Прогресс</div>
         <div class="month-tabs">
           <div class="month-tab" onclick="switchMonth('september', this)">Сентябрь</div>
-          <div class="month-tab active" onclick="switchMonth('october', this)">Октябрь</div>
+          <div class="month-tab" onclick="switchMonth('october', this)">Октябрь</div>
+          <div class="month-tab active" onclick="switchMonth('november', this)">Ноябрь</div>
         </div>
         <div class="month-stats" id="stats-september">
           <div class="stat-row">
@@ -797,10 +846,16 @@
             <div class="stat-box"><div class="sv">8/8</div><div class="sl">Домашек</div></div>
           </div>
         </div>
-        <div class="month-stats active" id="stats-october">
+        <div class="month-stats" id="stats-october">
           <div class="stat-row">
             <div class="stat-box"><div class="sv">9</div><div class="sl">Уроков</div></div>
             <div class="stat-box"><div class="sv">7/7</div><div class="sl">Домашек</div></div>
+          </div>
+        </div>
+        <div class="month-stats active" id="stats-november">
+          <div class="stat-row">
+            <div class="stat-box"><div class="sv">1</div><div class="sl">Уроков</div></div>
+            <div class="stat-box"><div class="sv">0/1</div><div class="sl">Домашек</div></div>
           </div>
         </div>
       </div>
