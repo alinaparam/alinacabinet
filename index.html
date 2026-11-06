@@ -262,7 +262,7 @@
       <!-- SUBSCRIPTION -->
       <div class="sub-card">
         <div class="sub-card-head">🎟 Абонемент</div>
-        <div class="sub-row">Оплаченных уроков: <span>2</span></div>
+        <div class="sub-row">Оплаченных уроков: <span>1</span></div>
       </div>
 
       <!-- SCHEDULE -->
@@ -337,6 +337,45 @@
                   <div>
                     <div class="hw-task">Выучить новые слова</div>
                     <a class="hw-link" href="https://termin.world/share/9652b011" target="_blank">&#128218; Открыть карточки</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lesson-item">
+            <div class="lesson-item-head" onclick="toggleLesson(this)">
+              <div class="lesson-title">Knit &amp; Chat: must, have to, mustn’t, should + must be / might / can’t</div>
+              <div class="lesson-date-badge">4 ноября</div>
+              <div class="chevron">&#9660;</div>
+            </div>
+            <div class="lesson-body">
+              <div class="lesson-section">
+                <div class="lesson-section-label">Что делали на уроке</div>
+                <ul class="topic-list">
+                  <li>Warm-up: вязание — твоя шапка, продавать ли свои вещи, хобби и работа</li>
+                  <li>must / have to / don’t have to / mustn’t / should: правило и главная ловушка — mustn’t (нельзя) и don’t have to (не обязательно)</li>
+                  <li>Listening: First day at Knit &amp; Chat — правила клуба и почему они такие</li>
+                  <li>Practice: нельзя или не обязательно? + перевод своих предложений</li>
+                  <li>Советы: What should she do? (You should… / You shouldn’t… / You don’t have to…)</li>
+                  <li>Догадки: must be (наверняка), might / could be (возможно), can’t be (не может быть); must be + -ing</li>
+                  <li>What’s the story? — догадки по фото; Just a minute</li>
+                  <li>Новые слова: experience, strict, upstairs, tissue, discuss, dress up, set limits, approximately, a ball of yarn, overthink</li>
+                </ul>
+              </div>
+              <div class="hw-block">
+                <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать задания на доске</div>
+                    <a class="hw-link" href="https://app.holst.so/share/b/86cef56a-cdc6-4b88-810d-192b52f78461" target="_blank">&#128203; Открыть доску</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать интерактивные задания</div>
+                    <a class="hw-link" href="https://alinaparam.github.io/alinahmw/" target="_blank">&#128214; Homework · Past, Habits &amp; Plans</a>
                   </div>
                 </div>
               </div>
@@ -961,8 +1000,8 @@
         </div>
         <div class="month-stats active" id="stats-november">
           <div class="stat-row">
-            <div class="stat-box"><div class="sv">1</div><div class="sl">Уроков</div></div>
-            <div class="stat-box"><div class="sv">0/1</div><div class="sl">Домашек</div></div>
+            <div class="stat-box"><div class="sv">2</div><div class="sl">Уроков</div></div>
+            <div class="stat-box"><div class="sv">0/2</div><div class="sl">Домашек</div></div>
           </div>
         </div>
       </div>
@@ -1144,7 +1183,8 @@ function switchMonth(id, tab) {
   const who = document.querySelector(".name").textContent.trim();
   const load = k => { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } };
   const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
-  const seenAw = load("awSeen:" + who) || [], seenStk = load("stkSeen:" + who) || [];
+  const OLD_AW = ["first","five","ten","hw10","perfect","months3","voice"], OLD_STK = ["Cry time","I choose violence","This is fine","Pew pew Felix","Doing my best"]; /* уже объявленные — без всплывашки */
+  const seenAw = (load("awSeen:" + who) || []).concat(OLD_AW), seenStk = (load("stkSeen:" + who) || []).concat(OLD_STK);
   const newAw = got.filter(a => !seenAw.includes(a.id));
   const newStk = unlocked.filter(s => !seenStk.includes(s.name));
   if (newAw.length || newStk.length) setTimeout(() => {
