@@ -264,28 +264,21 @@
       <!-- SUBSCRIPTION -->
       <div class="sub-card">
         <div class="sub-card-head">🎟 Абонемент</div>
-        <div class="sub-row">Оплаченных уроков: <span>1</span></div>
+        <div class="sub-row">Оплаченных уроков: <span>0</span></div>
       </div>
 
       <!-- SCHEDULE -->
       <div class="sched-card">
-        <div class="sched-head">📅 Ближайшие уроки</div>
-        <div class="sched-item">
-          <div class="sched-dot"></div>
-          <div class="sched-day">Воскресенье</div>
-          <div class="sched-time">22 ноября, 13:00</div>
-        </div>
+        <div class="sched-head">📅 Расписание</div>
         <div class="sched-item">
           <div class="sched-dot"></div>
           <div class="sched-day">Среда</div>
           <div class="sched-time">20:00</div>
         </div>
-        <!-- обычная суббота: классы «sched-day reg» / «sched-time reg» бот НЕ читает; после 22 ноября убрать « reg» и дату выше -->
-        <div class="sched-sub">Обычное расписание</div>
         <div class="sched-item">
-          <div class="sched-dot reg"></div>
-          <div class="sched-day reg">Суббота</div>
-          <div class="sched-time reg">14:00</div>
+          <div class="sched-dot"></div>
+          <div class="sched-day">Суббота</div>
+          <div class="sched-time">14:00</div>
         </div>
       </div>
 
@@ -545,6 +538,54 @@
                   <div>
                     <div class="hw-task">Выучить новые слова</div>
                     <a class="hw-link" href="https://alinaparam.github.io/words/alina/" target="_blank">&#128218; Мои слова</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lesson-item">
+            <div class="lesson-item-head" onclick="toggleLesson(this)">
+              <div class="lesson-title">I should have…: should / could / must have</div>
+              <div class="lesson-date-badge">22 ноября</div>
+              <div class="chevron">&#9660;</div>
+            </div>
+            <div class="lesson-body">
+              <div class="lesson-section">
+                <div class="lesson-section-label">Что делали на уроке</div>
+                <ul class="topic-list">
+                  <li>Разговор: speaking club и история про туриста в магазине</li>
+                  <li>Повторили времена: текст про первое собеседование на английском и перевод 12 предложений</li>
+                  <li>Правило: should have / could have / must have + V3 — надо было, могла бы, наверное</li>
+                  <li>Quick check и Missed chances: что надо было сделать в разных ситуациях</li>
+                  <li>Говорили про свадебное платье, детство и выбор профессии</li>
+                  <li>3-2-1: «A trip that didn’t go to plan» — история за 3, 2 и 1 минуту</li>
+                </ul>
+              </div>
+              <div class="lesson-section">
+                <div class="lesson-section-label">Материалы урока</div>
+                <a class="material-link" href="https://alinaparam.github.io/alinahmw/materials/should-have.html" target="_blank">&#128206; Правило: should / could / must have + V3</a>
+              </div>
+              <div class="hw-block">
+                <div class="hw-block-title">&#9999;&#65039; Домашнее задание</div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Сделать интерактивное ДЗ</div>
+                    <a class="hw-link" href="https://alinaparam.github.io/alinahmw/should-have-practice.html" target="_blank">&#128214; Homework · I should have…</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Доделать прошлое ДЗ</div>
+                    <a class="hw-link" href="https://alinaparam.github.io/alinahmw/" target="_blank">&#128214; Homework · Girls talk</a>
+                  </div>
+                </div>
+                <div class="hw-item">
+                  <div class="hw-status todo">!</div>
+                  <div>
+                    <div class="hw-task">Прочитать статью</div>
+                    <a class="hw-link" href="https://alinaparam.github.io/alinahmw/texting.html" target="_blank">&#128214; Reading · Seen at 14:02</a>
                   </div>
                 </div>
               </div>
@@ -1169,8 +1210,8 @@
         </div>
         <div class="month-stats active" id="stats-november">
           <div class="stat-row">
-            <div class="stat-box"><div class="sv">6</div><div class="sl">Уроков</div></div>
-            <div class="stat-box"><div class="sv">4/5</div><div class="sl">Домашек</div></div>
+            <div class="stat-box"><div class="sv">7</div><div class="sl">Уроков</div></div>
+            <div class="stat-box"><div class="sv">4/6</div><div class="sl">Домашек</div></div>
           </div>
         </div>
       </div>
